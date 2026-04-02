@@ -392,7 +392,9 @@
 
     <!-- Command hint -->
     <div class="cmd-hint">
-      <div class="cmd-title">Equivalent CLI Command (per file)</div>
+      <div class="cmd-title">Start backend · then open this page</div>
+      <code>python server.py</code>
+      <div class="cmd-title" style="margin-top:8px">Equivalent CLI (per file)</div>
       <code id="cmdPreview">python electoral_roll.py &lt;pdf&gt; --start-page 3 --dpi 200 --batch</code>
     </div>
   </div>
@@ -567,9 +569,7 @@ clearBtn.addEventListener('click', () => {
 });
 
 // ── Run logic ─────────────────────────────────────────────────────────────────
-// NOTE: This UI generates the exact shell commands to run.
-// In a production setup, connect to a local Python server (e.g. Flask/FastAPI)
-// that actually executes the script. Here we simulate the run for UI preview.
+const BACKEND = 'http://localhost:5000';
 runBtn.addEventListener('click', runQueue);
 
 async function runQueue() {
@@ -608,14 +608,15 @@ async function runQueue() {
     log('info', `  Output XLSX: ${outXlsx}`);
     log('info', `  Sheet name will be: "${stem.slice(0,31)}"`);
 
-    // ── Simulate async processing (replace this block with real fetch to backend) ──
-    await simulateProcessing(item, i);
-    // ─────────────────────────────────────────────────────────────────────────────
+    await processWithBackend(item, sp, ep, dpi, retry, outDir);
 
     if (item.status === 'done') {
       stats.done++;
       stats.records += item.records || 0;
-      log('ok', `  ✅ Done — ${item.records} records extracted → ${stem}.xlsx`);
+      const dlLink = item.xlsx
+        ? ` <a href="${BACKEND}/download/${encodeURIComponent(item.xlsx)}" style="color:var(--accent);text-decoration:underline" download>⬇ Download ${item.xlsx}</a>`
+        : '';
+      logRaw('ok', `  ✅ Done — ${item.records} records extracted${dlLink}`);
     } else {
       stats.errors++;
       log('err', `  ❌ Error processing ${item.name}`);
@@ -630,31 +631,50 @@ async function runQueue() {
   renderQueue();
 }
 
-// ── Simulation (replace with real backend call) ──────────────────────────────
-// To connect to a real backend, replace simulateProcessing with:
-//   const res = await fetch('http://localhost:5000/process', { method:'POST', body: formData });
-//   const data = await res.json();
-//   item.records = data.records; item.status = data.ok ? 'done' : 'error';
-async function simulateProcessing(item, idx) {
-  const delay = 1200 + Math.random() * 800;
-  await sleep(delay);
-  const success = Math.random() > 0.08; // 92% success rate simulation
-  if (success) {
-    item.records = Math.floor(300 + Math.random() * 900);
-    item.status  = 'done';
-  } else {
+// ── Real backend call ─────────────────────────────────────────────────────────
+async function processWithBackend(item, sp, ep, dpi, retry, outDir) {
+  const fd = new FormData();
+  fd.append('file',       item.file);
+  fd.append('start_page', sp);
+  fd.append('dpi',        dpi);
+  fd.append('no_retry',   retry === '--no-retry' ? 'true' : 'false');
+  if (ep)     fd.append('end_page',   ep);
+  if (outDir) fd.append('output_dir', outDir);
+
+  try {
+    const res  = await fetch(`${BACKEND}/process`, { method: 'POST', body: fd });
+    const data = await res.json();
+
+    // Stream the script's log lines into the log panel
+    if (data.log) {
+      data.log.split('\n').filter(l => l.trim()).forEach(line => {
+        const lvl = /ERROR/i.test(line) ? 'err' : /WARNING/i.test(line) ? 'warn' : 'info';
+        log(lvl, '    ' + line.trim());
+      });
+    }
+    if (data.error && !data.ok) log('err', `  Server: ${data.error}`);
+
+    item.records = data.records || 0;
+    item.xlsx    = data.xlsx    || null;
+    item.status  = data.ok ? 'done' : 'error';
+  } catch (e) {
     item.status  = 'error';
     item.records = 0;
+    log('err', `  ⚠ Cannot reach backend: ${e.message}`);
+    log('warn', '  → Make sure server.py is running: python server.py');
   }
   updateStatus(item.id, item.status, item.records);
 }
 
 // ── Log helpers ───────────────────────────────────────────────────────────────
 function log(level, msg) {
+  logRaw(level, esc(msg));
+}
+function logRaw(level, htmlMsg) {
   const ts  = new Date().toTimeString().slice(0, 8);
   const div = document.createElement('div');
   div.className = `log-entry ${level}`;
-  div.innerHTML = `<span class="ts">${ts}</span><span class="msg">${esc(msg)}</span>`;
+  div.innerHTML = `<span class="ts">${ts}</span><span class="msg">${htmlMsg}</span>`;
   logBody.appendChild(div);
   logBody.scrollTop = logBody.scrollHeight;
 }
