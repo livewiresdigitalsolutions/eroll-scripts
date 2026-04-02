@@ -347,8 +347,8 @@
         </select>
       </div>
       <div class="field">
-        <label>Output Folder</label>
-        <input type="text" id="outputDir" placeholder="same as PDF" class="wide" style="width:180px"/>
+        <label>Batch Name</label>
+        <input type="text" id="batchName" placeholder="e.g. batch1" style="width:120px"/>
       </div>
       <div class="field">
         <label>Retry</label>
@@ -396,6 +396,7 @@
       <code>python server.py</code>
       <div class="cmd-title" style="margin-top:8px">Equivalent CLI (per file)</div>
       <code id="cmdPreview">python electoral_roll.py &lt;pdf&gt; --start-page 3 --dpi 200 --batch</code>
+      <div style="margin-top:6px;font-size:11px;color:var(--muted)">All files merge into <code style="color:var(--text)" id="batchFileHint">batch.xlsx</code> · one sheet per PDF</div>
     </div>
   </div>
 
@@ -459,20 +460,21 @@ dropzone.addEventListener('drop', e => {
 });
 
 // Live command preview
-['startPage','endPage','dpiSel','retrySel','outputDir'].forEach(id =>
+['startPage','endPage','dpiSel','retrySel','batchName'].forEach(id =>
   document.getElementById(id).addEventListener('change', updateCmdPreview)
 );
+document.getElementById('batchName').addEventListener('input', updateCmdPreview);
 function updateCmdPreview() {
-  const sp = document.getElementById('startPage').value;
-  const ep = document.getElementById('endPage').value;
-  const dpi = document.getElementById('dpiSel').value;
+  const sp    = document.getElementById('startPage').value;
+  const ep    = document.getElementById('endPage').value;
+  const dpi   = document.getElementById('dpiSel').value;
   const retry = document.getElementById('retrySel').value;
-  const outDir = document.getElementById('outputDir').value;
+  const batch = document.getElementById('batchName').value.trim() || 'batch';
   let cmd = `python electoral_roll.py <pdf> --start-page ${sp} --dpi ${dpi} --batch`;
-  if (ep) cmd += ` --end-page ${ep}`;
+  if (ep)    cmd += ` --end-page ${ep}`;
   if (retry) cmd += ` ${retry}`;
-  if (outDir) cmd += ` --output "${outDir}/<name>.xlsx"`;
   cmdPreview.textContent = cmd;
+  document.getElementById('batchFileHint').textContent = `${batch}.xlsx`;
 }
 
 function addFiles(files) {
@@ -579,44 +581,33 @@ async function runQueue() {
   stats = { total: queue.length, done: 0, records: 0, errors: 0 };
   updateSummary();
 
-  const sp     = document.getElementById('startPage').value;
-  const ep     = document.getElementById('endPage').value;
-  const dpi    = document.getElementById('dpiSel').value;
-  const retry  = document.getElementById('retrySel').value;
-  const outDir = document.getElementById('outputDir').value.trim();
+  const sp        = document.getElementById('startPage').value;
+  const ep        = document.getElementById('endPage').value;
+  const dpi       = document.getElementById('dpiSel').value;
+  const retry     = document.getElementById('retrySel').value;
+  const batchName = document.getElementById('batchName').value.trim() || 'batch';
 
-  log('head', `━━━ Batch started — ${queue.length} file(s) ━━━`);
+  log('head', `━━━ Batch "${batchName}" started — ${queue.length} file(s) ━━━`);
+
+  let batchXlsx = null;
 
   for (let i = 0; i < queue.length; i++) {
     const item = queue[i];
     if (item.status === 'done') continue;
 
     updateStatus(item.id, 'running');
-    const pct = Math.round((i / queue.length) * 100);
-    progressBar.style.width = pct + '%';
+    progressBar.style.width = Math.round((i / queue.length) * 100) + '%';
 
-    log('info', `[${i+1}/${queue.length}] Processing: ${item.name}`);
+    const stem = item.name.replace(/\.pdf$/i, '');
+    log('info', `[${i+1}/${queue.length}] Processing: ${item.name}  (sheet → "${stem.slice(0,31)}")`);
 
-    // Build the command this item would run
-    const stem  = item.name.replace(/\.pdf$/i, '');
-    const outXlsx = outDir ? `"${outDir}/${stem}.xlsx"` : `(same folder as PDF)`;
-    let cmd = `python electoral_roll.py "${item.name}" --start-page ${sp} --dpi ${dpi} --batch`;
-    if (ep) cmd += ` --end-page ${ep}`;
-    if (retry) cmd += ` ${retry}`;
-    if (outDir) cmd += ` --output "${outDir}/${stem}.xlsx"`;
-    log('info', `  $ ${cmd}`);
-    log('info', `  Output XLSX: ${outXlsx}`);
-    log('info', `  Sheet name will be: "${stem.slice(0,31)}"`);
-
-    await processWithBackend(item, sp, ep, dpi, retry, outDir);
+    await processWithBackend(item, sp, ep, dpi, retry, batchName);
 
     if (item.status === 'done') {
       stats.done++;
       stats.records += item.records || 0;
-      const dlLink = item.xlsx
-        ? ` <a href="${BACKEND}/download/${encodeURIComponent(item.xlsx)}" style="color:var(--accent);text-decoration:underline" download>⬇ Download ${item.xlsx}</a>`
-        : '';
-      logRaw('ok', `  ✅ Done — ${item.records} records extracted${dlLink}`);
+      if (item.batchXlsx) batchXlsx = item.batchXlsx;
+      log('ok', `  ✅ Done — ${item.records} records added to ${batchName}.xlsx`);
     } else {
       stats.errors++;
       log('err', `  ❌ Error processing ${item.name}`);
@@ -625,21 +616,24 @@ async function runQueue() {
   }
 
   progressBar.style.width = '100%';
-  log('head', `━━━ Batch complete — ${stats.done}/${stats.total} succeeded, ${stats.records} total records ━━━`);
+  log('head', `━━━ Batch complete — ${stats.done}/${stats.total} succeeded · ${stats.records} total records ━━━`);
+  if (batchXlsx) {
+    logRaw('ok', `📥 <a href="${BACKEND}/download/${encodeURIComponent(batchXlsx)}" style="color:var(--accent);font-weight:600;text-decoration:underline" download>Download ${batchXlsx}</a>`);
+  }
   isRunning = false;
   runBtn.disabled = false;
   renderQueue();
 }
 
 // ── Real backend call ─────────────────────────────────────────────────────────
-async function processWithBackend(item, sp, ep, dpi, retry, outDir) {
+async function processWithBackend(item, sp, ep, dpi, retry, batchName) {
   const fd = new FormData();
   fd.append('file',       item.file);
   fd.append('start_page', sp);
   fd.append('dpi',        dpi);
   fd.append('no_retry',   retry === '--no-retry' ? 'true' : 'false');
-  if (ep)     fd.append('end_page',   ep);
-  if (outDir) fd.append('output_dir', outDir);
+  fd.append('batch_name', batchName);
+  if (ep) fd.append('end_page', ep);
 
   try {
     const res  = await fetch(`${BACKEND}/process`, { method: 'POST', body: fd });
@@ -654,9 +648,9 @@ async function processWithBackend(item, sp, ep, dpi, retry, outDir) {
     }
     if (data.error && !data.ok) log('err', `  Server: ${data.error}`);
 
-    item.records = data.records || 0;
-    item.xlsx    = data.xlsx    || null;
-    item.status  = data.ok ? 'done' : 'error';
+    item.records   = data.records    || 0;
+    item.batchXlsx = data.batch_xlsx || null;
+    item.status    = data.ok ? 'done' : 'error';
   } catch (e) {
     item.status  = 'error';
     item.records = 0;

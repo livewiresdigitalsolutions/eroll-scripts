@@ -1335,24 +1335,12 @@ def _write_xlsx_sheet(ws, records: list):
 
 def save_to_xlsx(all_records, section_map, output_path: str,
                  batch_sheet_name: str = None):
-    """
-    Write the xlsx.
-    - Normal mode  : first sheet = "All Records", then one sheet per section.
-    - Batch mode   : first sheet name = batch_sheet_name (PDF filename stem),
-                     section sheets still appended after.
-    """
+    """Write one sheet (all records) to xlsx. section_map is ignored."""
     wb     = openpyxl.Workbook()
     ws_all = wb.active
     ws_all.title = batch_sheet_name if batch_sheet_name else "All Records"
     _write_xlsx_sheet(ws_all, all_records)
     log.info(f"  Sheet '{ws_all.title}' → {len(all_records)} rows")
-
-    for section_key, recs in section_map.items():
-        safe = re.sub(r"[\\/*?:\[\]]", "", section_key)[:31]
-        ws   = wb.create_sheet(title=safe)
-        _write_xlsx_sheet(ws, recs)
-        log.info(f"  Sheet '{safe}' → {len(recs)} rows")
-
     wb.save(output_path)
     log.info(f"Excel saved → {output_path}")
 
