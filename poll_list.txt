@@ -1,0 +1,2377 @@
+{
+    "status": "Success",
+    "statusCode": 200,
+    "refId": null,
+    "message": null,
+    "payload": [
+        {
+            "partId": 228497,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 1,
+            "partName": "M.D.T Hindu College Hr. Sec.School, West Building,2nd Room From North, Tirunelveli Junction"
+        },
+        {
+            "partId": 228498,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 2,
+            "partName": "M.D.T.Hindu College Hr.Sec.School,  West Building 3rd Room From North  Tirunelveli. Junction"
+        },
+        {
+            "partId": 228499,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 3,
+            "partName": "M.D.T Hindu College Hr. Sec.School, West Building, 4th Room From North, Tirunelveli Junction."
+        },
+        {
+            "partId": 228500,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 4,
+            "partName": "M.D.T Hindu College Hr. Sec.School, West Building, 5th Room From North, Tirunelveli Junction"
+        },
+        {
+            "partId": 228501,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 5,
+            "partName": "Matharasa Ishlamiya Primary School, ,Main Building, North Block, Kailasapuram."
+        },
+        {
+            "partId": 228502,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 6,
+            "partName": "Corporation Primary School, ,North Portion 1st Room, Kailasapuram."
+        },
+        {
+            "partId": 228503,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 7,
+            "partName": "M.D.T.Hindu College Hr.Sec.School, ,Eastern Building, Northern Last Room Tirunelveli. Junction"
+        },
+        {
+            "partId": 228504,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 8,
+            "partName": "M.D T. Hindu College Hr.Sec.School, ,West Building, South Portion, Last Hall, Tirunelveli. Juntion"
+        },
+        {
+            "partId": 228505,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 9,
+            "partName": "M.D T Hindu College Hr.Sec.School, ,West Building, Northern Portion, Last Hall, Tirunelveli Junction"
+        },
+        {
+            "partId": 228506,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 10,
+            "partName": "Corporation Health Inspector Office, ,Southern Side of Water Tank, Saniyasigramam."
+        },
+        {
+            "partId": 228507,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 11,
+            "partName": "Hindu Aided Middle School, ,North Portion, Sivapuram, Tirunelveli Junction."
+        },
+        {
+            "partId": 228508,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 12,
+            "partName": "Hindu Aided Middle School   ,Main Building, South Portion,  Sivapuram,Tirunelveli Junction."
+        },
+        {
+            "partId": 228509,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 13,
+            "partName": "Corporation Unit Office, ,(Thatchanallur Ward office) Meenatchipuram Tirunelveli Junction."
+        },
+        {
+            "partId": 228510,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 14,
+            "partName": "Corporation Girls Hr.sec.School, ,Main Building Western Side, Meenakshipuram,"
+        },
+        {
+            "partId": 228511,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 15,
+            "partName": "Corporation Kartalil Inimai Primary School ,West Building, North Side, Pulianthoppu North Street, Melaveeraragavapuram."
+        },
+        {
+            "partId": 228768,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 16,
+            "partName": "Corporation Kartalil Inimai Primary School, ,East Building, East Side, Pulianthoppu North Street, Melaveeraragavapuram"
+        },
+        {
+            "partId": 228769,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 17,
+            "partName": "Perarignar Anna Corporation Primary School, ,Western Block Ist Room, C.N.Village."
+        },
+        {
+            "partId": 228770,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 18,
+            "partName": "Perarignar Anna Corporation Primary School , ,Eastern Block 1st Room, C.N.Village."
+        },
+        {
+            "partId": 228771,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 19,
+            "partName": "Perarignar Anna Corporation Primary School, Eastern Block, IIIrd Room, C.N. Village."
+        },
+        {
+            "partId": 228772,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 20,
+            "partName": "Perarignar Anna Corporation Primary School, Western Block, 2nd Room, C.N. Village."
+        },
+        {
+            "partId": 228773,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 21,
+            "partName": "Purachi Thalaivar M.G.R Memorial Primary School, . ,North Portion Thiruvannathapuram"
+        },
+        {
+            "partId": 228774,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 22,
+            "partName": "Purachi Thalaivar M.G.R Memorial Primary School, . ,South Portion Thiruvannathapuram"
+        },
+        {
+            "partId": 228775,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 23,
+            "partName": "Hindu Aided Primary School, ,Southern Portion, Padappakkurichi."
+        },
+        {
+            "partId": 228776,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 24,
+            "partName": "Integrated Children Development Scheme, New Building west portion, Padappakkurichi."
+        },
+        {
+            "partId": 228777,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 25,
+            "partName": "Panchayath Union Primary School, West Portion, Venkateswarapuram, Thimmarajapuram."
+        },
+        {
+            "partId": 228778,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 26,
+            "partName": "Kosalram Primary School, Kakkannagar Thimmarajapuram."
+        },
+        {
+            "partId": 228779,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 27,
+            "partName": "Community Hall, ,South Side, Santhi Nagar,"
+        },
+        {
+            "partId": 228780,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 28,
+            "partName": "Community Hall, North Portion, Santhi Nagar"
+        },
+        {
+            "partId": 228781,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 29,
+            "partName": "Old Panchayat Office, New building, Unit Office-10, Thimmarajapuram. Keezhur."
+        },
+        {
+            "partId": 228782,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 30,
+            "partName": "Tirunelveli Corporation Anganvadi Centre  No: 0429, Muppidathi Amman Kovil Street Thimmarajapuram"
+        },
+        {
+            "partId": 229789,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 31,
+            "partName": "Tamilnadu Government Public Library Department, Book reading centre (New Building West) Branch Library Thimmarajapuram,"
+        },
+        {
+            "partId": 228783,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 32,
+            "partName": "Integrated Child Care  Centre No -10  Near Ward Office, Thimmarajapuram, Keezhur."
+        },
+        {
+            "partId": 228785,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 33,
+            "partName": "Panchayat Union Primary School ,East Portion, Venkateswarapuram Thimmarajapuram."
+        },
+        {
+            "partId": 228786,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 34,
+            "partName": "Corporation Old Primary School, Main Northern Hall, Salai Street, Vannarpettai"
+        },
+        {
+            "partId": 228787,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 35,
+            "partName": "Corporation Old Primary School, ,Main Southern Hall. Salai Street, Vannarpettai"
+        },
+        {
+            "partId": 228788,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 36,
+            "partName": "Corporation New Middle school, East building North portion, Salai Street, Vannarpettai."
+        },
+        {
+            "partId": 228789,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 37,
+            "partName": "Corporation New Middle School, East Building,South Portion, Salai Street, Vannarpettai."
+        },
+        {
+            "partId": 228790,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 38,
+            "partName": "Corporation New Middle School, New South Building,East Portion, Salai Street, Vannarpettai."
+        },
+        {
+            "partId": 228791,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 39,
+            "partName": "Corporation New Middle School, South Building,East Portion, Salai Street, Vannarpettai."
+        },
+        {
+            "partId": 228792,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 40,
+            "partName": "Corporation New Middle School, North Building, West Portion, Salai Street, Vannarpettai"
+        },
+        {
+            "partId": 228793,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 41,
+            "partName": "Corporation New Middle School, North Building, East Portion, Salai Street, Vannarpettai"
+        },
+        {
+            "partId": 228794,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 42,
+            "partName": "Panchayat Union Primary School ,Eastern Portion,Vellakoil, Ward No. I"
+        },
+        {
+            "partId": 228795,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 43,
+            "partName": "Panchayat Union Primary School, ,Western Portion, North Bypass Road, Vellakoil, Ward No. II."
+        },
+        {
+            "partId": 228796,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 44,
+            "partName": "Francis Xavier School (CBSE), west Building, Ground floor, Middle Portion, Barani Nagar ,Vannarpettai, Ward No.10."
+        },
+        {
+            "partId": 228797,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 45,
+            "partName": "Muslim Matharasa Primary School , West Side, Palayamkottur"
+        },
+        {
+            "partId": 229790,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 46,
+            "partName": "Muslim Matharasa Primary School , South Building East Portion, Palayamkottur,"
+        },
+        {
+            "partId": 228798,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 47,
+            "partName": "Tamilnadu Government Public Library Department,  Branch Library Thimmarajapuram,"
+        },
+        {
+            "partId": 228799,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 48,
+            "partName": "T.D.T.A. Primary School,North Building Eastern Wing,H.M.Room, Shanthi nagar,"
+        },
+        {
+            "partId": 228800,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 49,
+            "partName": "T.D.T.A. Primary School ,Northern Building, Eastern Portion, Shanthi Nagar"
+        },
+        {
+            "partId": 228801,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 50,
+            "partName": "T.D.T.A. Primary School, ,Northern Building, Western Portion Shanthinagar"
+        },
+        {
+            "partId": 228802,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 51,
+            "partName": "T.D.T.A. Primary School, Northern Building, Northern Portion Shanthinagar"
+        },
+        {
+            "partId": 228803,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 52,
+            "partName": "T.D.T.A. Primary School,   , South Building West Wing, Santhinagar."
+        },
+        {
+            "partId": 229791,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 53,
+            "partName": "T D.T.A. Primary School, North Building East Portion, South Facing, Santhinagar"
+        },
+        {
+            "partId": 228804,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 54,
+            "partName": "Magdalene Matric Hr.Sec.School, Main Building North facing G1 Room,Rahmath Nagar,"
+        },
+        {
+            "partId": 228805,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 55,
+            "partName": "Magdalene Matric Hr.Sec.School, Main Building North facing G3 Room,Rahmath Nagar,"
+        },
+        {
+            "partId": 228806,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 56,
+            "partName": "Magdalene Matric Hr.Sec.School, Main Building North facing G5 Room,Rahmath Nagar,"
+        },
+        {
+            "partId": 228807,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 57,
+            "partName": "Magdalene Matric Hr.Sec.School, Main Building North facing G6 Room,Rahmath Nagar"
+        },
+        {
+            "partId": 228808,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 58,
+            "partName": "Magdalene Matric Hr.Sec.School, Main Building North facing G8 Room,Rahmath Nagar"
+        },
+        {
+            "partId": 228809,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 59,
+            "partName": "Panchayat Union Middle School   ,New Building, Western Block, Northern Portion, Piranthankulam."
+        },
+        {
+            "partId": 228810,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 60,
+            "partName": "Panchayat Union Middle School   ,South Building, Western Portion  Piranthankulam."
+        },
+        {
+            "partId": 228811,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 61,
+            "partName": "Panchayat Union Middle School   , New Building Western Block,  South Portion, 1st Room Piranthankulam,  Manakavalampillai Nagar."
+        },
+        {
+            "partId": 228812,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 62,
+            "partName": "Panchayat Union Middle School   , New Building Western Block, South Portion, IInd Room Piranthankulam,  Manakavalampillai Nagar."
+        },
+        {
+            "partId": 228813,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 63,
+            "partName": "Young Men Christrian Association Boys Hostel ,Main Building, West Portion, Palayamkottai"
+        },
+        {
+            "partId": 228814,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 64,
+            "partName": "Young Men Christrian Association Boys Hostel,Main Building, North Portion, Palayamkottai"
+        },
+        {
+            "partId": 229792,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 65,
+            "partName": "Young Men Christrian Association Boys Hostel,Main Building, East Portion, Palayamkottai"
+        },
+        {
+            "partId": 228815,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 66,
+            "partName": "Corporation Vadakkupadai Primary School, Main Hall, Eyarpagainayanar Street, Palayamkottai."
+        },
+        {
+            "partId": 228816,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 67,
+            "partName": "Corporation Vadkkupadai Primary School , New Building, Northern Portion Eyarpagainayanar Street, Palayamkottai"
+        },
+        {
+            "partId": 228879,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 68,
+            "partName": "Corporation Vadkkupadai Primary School ,New Building, Southern Portion Eyarpagainayanar Street, Palayamkottai"
+        },
+        {
+            "partId": 228880,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 69,
+            "partName": "C.M.S. Mary Arden Middle School, ,Arden Hall ,Northern Side,Palayamkottai"
+        },
+        {
+            "partId": 228881,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 70,
+            "partName": "C.M.S, Mary Arden School, ,Arden Hall, South Portion, Palayamkottai"
+        },
+        {
+            "partId": 228882,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 71,
+            "partName": "C.M.S, Mary Arden Milddle School, Western Portion Palayamkotai"
+        },
+        {
+            "partId": 228883,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 72,
+            "partName": "Corporation Vadakkupadai Integrated Children Development Scheme Balar School   ,Western Portion, Eyarpagainayanar Street, Palayamkottai"
+        },
+        {
+            "partId": 229793,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 73,
+            "partName": "Corporation Vadakkupadai Integrated Children Development Scheme Balar School North Building East Portion, Eyarpagainayanar Street Palayamkottai"
+        },
+        {
+            "partId": 228884,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 74,
+            "partName": "Corporation Vaddakkupadai Intergrated Children Development Scheme Balar School, Easten Portion,  Eyarpagainayanar Street, Palayamkottai"
+        },
+        {
+            "partId": 228885,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 75,
+            "partName": "C.M.S. Mary Arden Middle School ,Middle Room Western Side, Eyarpagainayanar Street Palayamkottai."
+        },
+        {
+            "partId": 228886,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 76,
+            "partName": "C.M.S Mary Arden Middle School, , Selvin Hall, Eyarpagainayanar Street Palayamkottai"
+        },
+        {
+            "partId": 228887,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 77,
+            "partName": "St.Joesph Matriculation  School, Eastern Building Northern Wing, Senthilnagar  (Ward 11)  Palayamkottai"
+        },
+        {
+            "partId": 228888,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 78,
+            "partName": "St. Joesph Matriculation  School,   Eastern Building Middle Portion Senthilnagar  (Ward 11)  Palayamkottai"
+        },
+        {
+            "partId": 228889,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 79,
+            "partName": "St.Joesph Matriculation School     ,Southern Portion Eastren Building ,Senthil Nagar(Ward 11)Palayamkottai"
+        },
+        {
+            "partId": 228890,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 80,
+            "partName": "TDTA Primary School, Western Building Christhu Koil Street. Samathanapuram"
+        },
+        {
+            "partId": 228891,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 81,
+            "partName": "TDTA Primary School, ,Eastren Block, Backside room, Christhu Koil Street. Samathanapuram"
+        },
+        {
+            "partId": 228892,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 82,
+            "partName": "TDTA Primary School ,Additional Building Christhu Koil Street Samathanapuram"
+        },
+        {
+            "partId": 228893,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 83,
+            "partName": "Corporation Middle School, ,R.C Terraced Portion in the back Side Southern Portion, Perumal Sannathi Street,Palayamkottai"
+        },
+        {
+            "partId": 228894,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 84,
+            "partName": "Corporation Middle School, , R.C Shed, Northern Side, Perumal Sannathi Street, Palayamkottai"
+        },
+        {
+            "partId": 228895,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 85,
+            "partName": "Corporation Middle School, Integrated Childrens Nutrition CentreNo  77, Perumal Sannathi Street, Palayamkottai"
+        },
+        {
+            "partId": 228896,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 86,
+            "partName": "St Antonys Primary School, Main Building North Palayamkottai"
+        },
+        {
+            "partId": 228897,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 87,
+            "partName": "St Antonys Primary School ,Main Building, Main Hall, South Side, Palayamkottai"
+        },
+        {
+            "partId": 228898,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 88,
+            "partName": "Corporation Middle School ,(Front Hall) Western Wing, Perumal Sannathi Street, Palayamkottai"
+        },
+        {
+            "partId": 228899,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 89,
+            "partName": "Corporation Middle School,     ,(Front Hall) Eastern Wing, Perumal Sannathi Street,Palayamkottai"
+        },
+        {
+            "partId": 228900,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 90,
+            "partName": "Corporation Middle School ,Perumal Sannathi Street (Front Hall) Middle Portion, Palayamkottai"
+        },
+        {
+            "partId": 228901,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 91,
+            "partName": "Usborne Memorial Middle School ,New Building Southern Side, Langarkhana Street Palayamkottai"
+        },
+        {
+            "partId": 228902,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 92,
+            "partName": "Usborne Memorial Middle School , (Main Building) Lankarkana Street, Palayamkottai"
+        },
+        {
+            "partId": 228903,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 93,
+            "partName": "Usborne Memorial Middle School ,New Building Northern Side, Langarkhana Street Palayamkottai"
+        },
+        {
+            "partId": 228904,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 94,
+            "partName": "Sarah Tucker Branch Elementray School , (Northern Building)Chinnakoil Street., Adaikalapuram"
+        },
+        {
+            "partId": 228905,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 95,
+            "partName": "Sarah Tucker Branch Elementary School , , Southern Building Chinnakoil Street Adaikalapuram"
+        },
+        {
+            "partId": 228906,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 96,
+            "partName": "Cathedral Higher Secondary School, ,New Block, Bishop Jebaraj Block, Murugankurichi"
+        },
+        {
+            "partId": 228907,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 97,
+            "partName": "Manoranjitham Middle School, Northern Block Eastern Side Ilangovadigal Street, Kokkirakulam"
+        },
+        {
+            "partId": 228908,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 98,
+            "partName": "Manoranjitham Middle School, Western Block Western Side Ilangovadigal Street, Kokkirakulam"
+        },
+        {
+            "partId": 228909,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 99,
+            "partName": "Corporation Primary School, East Portion,  Kurundudaiyarpuram."
+        },
+        {
+            "partId": 228910,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 100,
+            "partName": "Stella Marys School, (National Creche Ministry of Women & Child Development), Kokkirakulam"
+        },
+        {
+            "partId": 228911,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 101,
+            "partName": "Corporation Primary School, West Portion,  Kurundudaiyarpuram."
+        },
+        {
+            "partId": 228912,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 102,
+            "partName": "Manivasagar Arulneri Middle School , South Room, Western Side, Pudupettai Middle Street Palayamkottai"
+        },
+        {
+            "partId": 228913,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 103,
+            "partName": "Manivasagar Arulneri Middle School, Southern Building. Eastern Side, South Room Puthu Pettai Middle Street, Palayamkottai"
+        },
+        {
+            "partId": 229794,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 104,
+            "partName": "Manivasagar Arulneri Middle School, North Building, East Portion, Puthu Pettai Middle Street, Palayamkottai"
+        },
+        {
+            "partId": 228914,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 105,
+            "partName": "Layola Convent Primary School , ,Western block 4th Room, From west Side to East Palayamkottai"
+        },
+        {
+            "partId": 228915,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 106,
+            "partName": "Layola Convent Primary School , ,Western Wing 3rd Room, Palayamkottai"
+        },
+        {
+            "partId": 229795,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 107,
+            "partName": "Layola Convent Primary School ,South Building Middle Portion, Palayamkottai"
+        },
+        {
+            "partId": 228916,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 108,
+            "partName": "Child Jesus Higher Secondary School   South Block Building, Central Hall 6th C class Room,  St. Mark Street, Palayamkottai"
+        },
+        {
+            "partId": 228917,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 109,
+            "partName": "Child Jesus Higher Secondary School  ,West Block New Building Southern Ground Floor 11th E Class Room, St. Mark Salai  Palayamkottai"
+        },
+        {
+            "partId": 228918,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 110,
+            "partName": "Child Jesus Higher Secondary School,  Southern Block Western Side 6th B Class Room, Old Church Street,  Palayamkottai"
+        },
+        {
+            "partId": 228919,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 111,
+            "partName": "Child Jesus Higher Secondary School , 11th D Class Room,Western  Block  Old Chruch Strreet,  Palayamkottai"
+        },
+        {
+            "partId": 228920,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 112,
+            "partName": "Corporation Middle School,  Manakavalam Pillai Hospital Road,   SouthSide,  Near Sanitary Inspector’s Office, Samathanapuram"
+        },
+        {
+            "partId": 228921,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 113,
+            "partName": "Corporation Middle School, Manakavalam Pillai Hospital Road,   Western Side,  Near Sanitary Inspector’s Office, Samathanapuram"
+        },
+        {
+            "partId": 228922,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 114,
+            "partName": "Corporation Middle School, Manakavalam Pillai Hospital Road, South Side Eastern Part,  Near Sanitary Inspector’s Office, Samathanapuram"
+        },
+        {
+            "partId": 229796,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 115,
+            "partName": "Corporation Middle School, Manakavalam Pillai Hospital Road, North Building East Portion, Near Sanitary Inspectors Office, Samathanapuram"
+        },
+        {
+            "partId": 228923,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 116,
+            "partName": "Corporation Community Hall ,Northern Wing Scavenger’s Colony Palayamkottai"
+        },
+        {
+            "partId": 228924,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 117,
+            "partName": "Corporation Community Hall ,Southern Wing Scavenger’s Colony Palayamkottai"
+        },
+        {
+            "partId": 228925,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 118,
+            "partName": "St Johns Higher Secondary School,PTA Building Room No 49 Palayamkottai"
+        },
+        {
+            "partId": 228926,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 119,
+            "partName": "St Johns Higher Secondary School ,Room No1 Main Block Northern Side, Palayamkottai"
+        },
+        {
+            "partId": 228927,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 120,
+            "partName": "St Johns Higher Secondary School,Room No4 Main Block Southern Side, Palayamkottai"
+        },
+        {
+            "partId": 228928,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 121,
+            "partName": "St Johns Higher Secondary School, PTA Room No 50 Palayamkottai"
+        },
+        {
+            "partId": 228929,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 122,
+            "partName": "St Johns Higher Secondary School, PTA Room No 51 Palayamkottai"
+        },
+        {
+            "partId": 228930,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 123,
+            "partName": "St Johns Higher Secondary School, Room No6 Main Portion, South Side Palayamkottai"
+        },
+        {
+            "partId": 228931,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 124,
+            "partName": "Sarah Tucker Higher Secondary School , ,Howard Memorial Hall, 2nd Hall From West Palayamkottai"
+        },
+        {
+            "partId": 228932,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 125,
+            "partName": "Sarah Tucker Girl’s Higher Secondary School, ,Howard Memorial Hall, Eastern Side, Last Room, Palayamkottai."
+        },
+        {
+            "partId": 228933,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 126,
+            "partName": "Sarah Tucker Girl’s Higher Secondary School, ,Howard Memorial Hall,Middle Portion, Last Room, Palayamkottai."
+        },
+        {
+            "partId": 229797,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 127,
+            "partName": "Sarah Tucker Girls Higher Secondary School,North Building West Portion, I standard C Section Palayamkottai"
+        },
+        {
+            "partId": 228934,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 128,
+            "partName": "Sarah Tucker Girls Higher Secondary School, ,Eastern side East Block, Central Hall, New Building, III B Class Room, Palayamkottai,"
+        },
+        {
+            "partId": 228935,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 129,
+            "partName": "Corporation Primary School , South Building, Eastern Porition, A.R. Line, Palayamkottai"
+        },
+        {
+            "partId": 228936,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 130,
+            "partName": "Corporation Primary School ,Northern Wing, West Portion, A.R. Line Palayamkottai"
+        },
+        {
+            "partId": 228937,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 131,
+            "partName": "Corporation Primary School, ,North Building, East Portion, A.R. Line, Palayamkottai"
+        },
+        {
+            "partId": 229798,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 132,
+            "partName": "Integrated Children Development Scheme Corporation Primary School, ,North Building, East Portion, A.R. Line, Palayamkottai"
+        },
+        {
+            "partId": 228938,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 133,
+            "partName": "Rose Mary Marticulation School ,1std ‘A’ Section ,Ram Nagar, Thiyagarajanagar"
+        },
+        {
+            "partId": 229799,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 134,
+            "partName": "Rosemary Matriculation Higher Secondary School, South side middle portion hall no. 17 Ram Nagar, Thiyagaraja Nagar"
+        },
+        {
+            "partId": 228939,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 135,
+            "partName": "Sri Jeyandra Swaimigal Silver Jubilee Higher Secondary School, Hall No:5 Valli Mandram, Maharajanagar, Palayamkottai"
+        },
+        {
+            "partId": 228940,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 136,
+            "partName": "Nellaiappar Anbu Asiramam Primary School , Dining Hall,Maharaja Nagar"
+        },
+        {
+            "partId": 228941,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 137,
+            "partName": "Sri Jeyandra Saraswathi Swamigal SilverJubilee Hr. Sec. School , Valli Mandram Hall No. 4 Maharaja Nagar"
+        },
+        {
+            "partId": 228942,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 138,
+            "partName": "Sri Jeyandra Saraswathi Swamigal SilverJubilee Higher Secondary School , Valli Mandapam Hall Room No  3 Maharaja Nagar"
+        },
+        {
+            "partId": 229262,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 139,
+            "partName": "Sri Jeyandra Saraswathi Swamigal Silver Jubilee Higher Secondary School, Manimandapam Hall No.19, Maharaja Nagar"
+        },
+        {
+            "partId": 229263,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 140,
+            "partName": "Sri Jeyandra Saraswathi Swamigal Silver Jubilee Higher Secondary School ,Manimandapam Hall No.16, Maharaja Nagar"
+        },
+        {
+            "partId": 229264,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 141,
+            "partName": "Rosemary Marticulation Higher Secondary School, East to West 5th Entrance, L.K.G C Section, Tuticorin Road, V.M. Chatram"
+        },
+        {
+            "partId": 229800,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 142,
+            "partName": "Rosemary Marticulation Higher Secondary School, South Building East Portion, U.K.G B section Tuticorin Road, V.M. Chatram"
+        },
+        {
+            "partId": 229265,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 143,
+            "partName": "Rosemary Marticulation Higher Secondary School, Middle Portion 2nd room from west Tuticorin Road, V.M. Chatram Palayamkottai"
+        },
+        {
+            "partId": 229266,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 144,
+            "partName": "Rosemary Marticulation Higher Secondary School, Ist  A Section, Tuticorin Road, V.M. Chatram Palayamkottai"
+        },
+        {
+            "partId": 229267,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 145,
+            "partName": "Panchayat Union Primary School,    New Building Western Portion West side  V.M.Chathram"
+        },
+        {
+            "partId": 229268,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 146,
+            "partName": "Panchayat Union Primary School, North Part Building   ,Northern Portion, V.M. Chatram"
+        },
+        {
+            "partId": 229269,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 147,
+            "partName": "Panchayat Union Primary School, North Part Building,Southern Portion, V.M. Chatram"
+        },
+        {
+            "partId": 229270,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 148,
+            "partName": "Panchayat Union Primary School,    New Building Western Portion V.M.Chathram"
+        },
+        {
+            "partId": 229271,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 149,
+            "partName": "Rosemary Matriculation Higher Secondary School, , East Portion, Ist Room Tuticorin Road, V.M.Chatram."
+        },
+        {
+            "partId": 229272,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 150,
+            "partName": "Rosemary Matriculation Higher Secondary School, , East Portion, Forth Room Tuticorin Road, V.M.Chatram."
+        },
+        {
+            "partId": 229801,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 151,
+            "partName": "Rosemary Matriculation Higher Secondary School, South building middle portion, Tuticorin Road, V.M.Chatram."
+        },
+        {
+            "partId": 229273,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 152,
+            "partName": "Rosemary Matriculation Higher Secondary School , West Portion 3rd Room, Tuticorin Road, V.M.Chatram."
+        },
+        {
+            "partId": 229274,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 153,
+            "partName": "Rosemary Matriculation Higher Secondary School , West Portion 1t Room Tuticorin Road, V.M.Chatram."
+        },
+        {
+            "partId": 229275,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 154,
+            "partName": "Sri P.M.Sankara Subbiah Memorial I.T.I., Main Hall  V.M.Chatram"
+        },
+        {
+            "partId": 229276,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 155,
+            "partName": "St. Joseph High School, West Part Arockianathapuram"
+        },
+        {
+            "partId": 229277,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 156,
+            "partName": "Rosemary Matriculation Higher Secondary School ,U.K.G., A - Section , West to East Ist Room, Ram Nagar, Thiyagaraja Nagar."
+        },
+        {
+            "partId": 229278,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 157,
+            "partName": "St. Antony’s Public School, 2nd Std Class Room, V.M.Chathram"
+        },
+        {
+            "partId": 229279,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 158,
+            "partName": "Rosemary Marticulation Higher Secondary School , First Standard, B Section, Ram Nagar, Thiyagaraja Nagar."
+        },
+        {
+            "partId": 229280,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 159,
+            "partName": "Pushpalatha Matric Higher Secondary School, East Part, South Portion, Thiyagarajanagar, Palayamkottai"
+        },
+        {
+            "partId": 229281,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 160,
+            "partName": "Pushbalatha Matric Higher Secondary School, 5th Std ‘C’ Class Room Palayamkottai"
+        },
+        {
+            "partId": 229282,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 161,
+            "partName": "Pushbalatha Matric Higher Secondary School,Eastern Wing Northern Portion Palayamkottai"
+        },
+        {
+            "partId": 229283,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 162,
+            "partName": "Pushbalatha Matric Higher Secondary School, Northern Wing Eastern Portion Palayamkottai"
+        },
+        {
+            "partId": 229284,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 163,
+            "partName": "Rosemary Matriculation School, ,U.K.G, B Section, Ramnagar, Thiyagarajanagar"
+        },
+        {
+            "partId": 229285,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 164,
+            "partName": "Rosemary Matriculation Higher Secondary School ,Pre .K.G. Section, Ram Nagar, Thiyagaraja Nagar."
+        },
+        {
+            "partId": 229286,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 165,
+            "partName": "Pushbalatha Matric Higher Secondary School, Northern Wing Western Portion Palayamkottai"
+        },
+        {
+            "partId": 229287,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 166,
+            "partName": "Pushbalatha Matric Higher Secondary School, Middle Portion Palayamkottai"
+        },
+        {
+            "partId": 229288,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 167,
+            "partName": "Corporation Primary School , South to North, 8th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229289,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 168,
+            "partName": "Corporation Primary School , Northern Portion 10th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229290,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 169,
+            "partName": "Corporation Primary School , South to North, 6th Entrance Eastern Portion, Perumalpuram"
+        },
+        {
+            "partId": 229291,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 170,
+            "partName": "Corporation Primary School   , South to North, 6th Entrance Western Portion,  Perumalpuram"
+        },
+        {
+            "partId": 229292,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 171,
+            "partName": "Corporation Primary School , South to North, 7th Entrance Perumalpuram"
+        },
+        {
+            "partId": 229293,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 172,
+            "partName": "Corporation Primary School ,South to North, 4th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229294,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 173,
+            "partName": "Corporation Primary School, South to North, 11th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229295,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 174,
+            "partName": "Corporation Primary School, South to North,9th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229296,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 175,
+            "partName": "Corporation Primary School, South to North,13th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229297,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 176,
+            "partName": "Corporation Primary  School   ,South to North, 12th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229298,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 177,
+            "partName": "Corporation Primary School   ,South to North, 5th Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229299,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 178,
+            "partName": "St. Jospeh Girls Higher Secondary School XII Std ’A’Class Room south Building, N.G.O.A. Colony"
+        },
+        {
+            "partId": 229300,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 179,
+            "partName": "St. Jospeh Girls Higher Secondary School Campus St. Xavier Nursery and Primary School, New Building Ist Std Class Room, N.G.O.A. Colony"
+        },
+        {
+            "partId": 229301,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 180,
+            "partName": "Corporation Primary School ,South to North, 2nd Entrance, Perumalpuram"
+        },
+        {
+            "partId": 229302,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 181,
+            "partName": "St.Joseph Girls Hr.Sec.School , Eastern Building 12th A Class Room, N.G.O-A Colony."
+        },
+        {
+            "partId": 229303,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 182,
+            "partName": "St.Joseph Girls Hr.Sec.School , Eastern Building 12th B Class Room, N.G.O-A Colony."
+        },
+        {
+            "partId": 229304,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 183,
+            "partName": "St.Joseph Girls Hr.Sec.School , South Building XI the B Class Room N.G.O-A Colony"
+        },
+        {
+            "partId": 229305,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 184,
+            "partName": "St. Joseph Girls Hr. Sec. School   ,Eastern  Building, 11th A Class Room, N.G.O. A. Colony."
+        },
+        {
+            "partId": 229306,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 185,
+            "partName": "St. Joseph Girls Hr. Sec. School   ,Eastern  Building, 12th C Class Room, N.G.O. A. Colony."
+        },
+        {
+            "partId": 229307,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 186,
+            "partName": "St. Joseph Girls Hr. Sec. School Campus St. Xavier Nursery and Primary School New Building L.K.G. Class Room N.G.O. A. Colony."
+        },
+        {
+            "partId": 229802,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 187,
+            "partName": "St Joseph Girls Hr Sec School southern block western side east portion NGO A Colony"
+        },
+        {
+            "partId": 229308,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 188,
+            "partName": "St. Joseph Girls Hr. Sec. School , Western Builidng, East Side. N.G.O. A. Colony, Palayamkottai"
+        },
+        {
+            "partId": 229309,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 189,
+            "partName": "St. Joseph Girls Hr. Sec. School , Western building, Western Side, N.G.O.A. Colony, Palayamkottai"
+        },
+        {
+            "partId": 229310,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 190,
+            "partName": "St. Joseph Girls Hr. Sec. School ,Eastern Builidng, Western Side XI F Std Class Room , N.G.O.A. Colony, Palayamkottai"
+        },
+        {
+            "partId": 229311,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 191,
+            "partName": "St.Joseph Primary School, , Eastern Wing, Near R.T.O Office N.G.O.B Colony, Palayamkottai"
+        },
+        {
+            "partId": 229312,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 192,
+            "partName": "St.Joseph Primary School , western Wing,IIIrd A Class Room Near R.T.O Office N.G.O.B Colony, Palayamkottai"
+        },
+        {
+            "partId": 229313,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 193,
+            "partName": "St.Joseph Primary School , Western Portion R.T.O Office N.G.O.B Colony, Palayamkottai"
+        },
+        {
+            "partId": 229314,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 194,
+            "partName": "St.Joseph Primary School   ,Western Wing, IV Class room Near R.T.O Office, N.G.O.B Colony, Palayamkottai"
+        },
+        {
+            "partId": 229803,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 195,
+            "partName": "StJoseph Primary School, North Building, East portion Near R.T.O Office, N.G.O.B Colony, Palayamkottai"
+        },
+        {
+            "partId": 229315,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 196,
+            "partName": "Amala Primary School, North Part, 1st RoomN.G.O.B Colony, Jawahar Nagar Palayamkottai"
+        },
+        {
+            "partId": 229316,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 197,
+            "partName": "Amala Primary School   North part IInd Room N.G.O.B Colony, Jawahar Nagar Palayamkottai"
+        },
+        {
+            "partId": 229317,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 198,
+            "partName": "Amala Primary School  North Part 3rd Room  N.G.O.B Colony, Jawahar Nagar Palayamkottai"
+        },
+        {
+            "partId": 229318,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 199,
+            "partName": "Amala Primary School ,Southern Portion, Hostal, N.G.O.B Colony, Jawahar Nagar Palayamkottai"
+        },
+        {
+            "partId": 229319,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 200,
+            "partName": "TDTA Jeyaraj Annapackiam Matric Hr.Sec. School ,Main Building North Portion, Xth and XIth Class Room Tuckarammalpuram"
+        },
+        {
+            "partId": 229804,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 201,
+            "partName": "TDTA Jeyaraj Annapackiam Matric Hr.Sec. School ,Main Building North Portion, Hall no. 10 Tuckarammalpuram"
+        },
+        {
+            "partId": 229320,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 202,
+            "partName": "T.D.T.A Primary School, ,Northern hall, Westpotion , Pandidurai 2nd Street. Ward 1. Kulavanigarpuram"
+        },
+        {
+            "partId": 229321,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 203,
+            "partName": "T.D.T.A Primary School,  Eastern Portion, Northern hall,  Pandithurai2ndst Kulavanigarpuram"
+        },
+        {
+            "partId": 229322,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 204,
+            "partName": "T.D.T.A Primary School, SouthPortion Eastern Hall, Pandithurai 2nd st Kulavanigarpuram"
+        },
+        {
+            "partId": 229323,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 205,
+            "partName": "Integrated Child Development Centre Building No:89 Kulavanigarpuram"
+        },
+        {
+            "partId": 229324,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 206,
+            "partName": "Flowrence sweinson Deaf and Dum High School ,Auditorium Hall North Portion Eastern side, Thiruvanandapuram Road, Kulavanigarpuram,"
+        },
+        {
+            "partId": 229325,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 207,
+            "partName": "Flowrence sweinson Deaf and Dum High School ,Auditorium Hall North Portion Western Side, Thiruvanandapuram Road, Kulavanigarpuram,"
+        },
+        {
+            "partId": 229805,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 208,
+            "partName": "Flowrence sweinson Deaf and Dum High School, South building middle portion, Thiruvanandapuram Road, Kulavanigarpuram,"
+        },
+        {
+            "partId": 229326,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 209,
+            "partName": "St. Thomas High School ,Central Portion, Eastern Building, Section 9th – A, Kulavanigarpuram Main Road, Kurichi."
+        },
+        {
+            "partId": 229327,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 210,
+            "partName": "St. Thomas High School ,Central Block, Eastern Portion, section XA Kulavanigarpuram Main Road, Kurichi."
+        },
+        {
+            "partId": 229806,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 211,
+            "partName": "St Thomas High School ,Central Portion, middle building hall no. 4 Kulavanigarpuram Main Road, Kurichi"
+        },
+        {
+            "partId": 229328,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 212,
+            "partName": "Corporation Primary School,   3rd Std Class Room West Portion,Nethaji Road Kurichi,  Melapalayam"
+        },
+        {
+            "partId": 229329,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 213,
+            "partName": "Corporation Primary School, ,North Bulding West Portion Nethaji Road Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229330,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 214,
+            "partName": "Integrated Child Development Centre, Corporation Primary School Campus ,Nethaji Road, Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229331,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 215,
+            "partName": "Corporation Primary School, ,Westblock, South Building West Portion Nethaji Road Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229332,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 216,
+            "partName": "Corporation Primary School, ,South Building, West Portion, Nethaji Road Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229333,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 217,
+            "partName": "Sri Ganesamoorthy Middle School,Southern Building , 8th Std Class Room,          Maruthupandiar 3rd Street Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229334,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 218,
+            "partName": "Sri Ganesamoorthy Middle School,   ,Southern Building , 1st Room, Maruthupandiar 3rd Street Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229335,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 219,
+            "partName": "Muslim Higher Secondary School, ,North Block, Additional New Building, East Part West Portion, Nethaji Road, Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229807,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 220,
+            "partName": "Muslim Hr.sec. School, north block, east part, west portion, Kurichi, melapalayam"
+        },
+        {
+            "partId": 229336,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 221,
+            "partName": "Muslim Higher Secondary School, ,North Block, Additional New Building, West Part West Portion, Nethaji Road, Kurichi, Melapalayam"
+        },
+        {
+            "partId": 229337,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 222,
+            "partName": "Muslim Higher Secondary School,  North Block  Additional New Building,  West Part West  Portion 1st Room  Nethaji Road, Kurichi."
+        },
+        {
+            "partId": 229338,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 223,
+            "partName": "Muslim Higher Secondary School,  North Block  Additional New Building,  West Part West  Portion 2nd Room  Nethaji Road, Kurichi."
+        },
+        {
+            "partId": 229339,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 224,
+            "partName": "Nehru Primary School, Western Portion  Basheerappa North street  Melapalayam"
+        },
+        {
+            "partId": 229340,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 225,
+            "partName": "The Muslim Girls Hr.Sec.School, North Building 2nd room, M L M Nagar,Melapalayam."
+        },
+        {
+            "partId": 229341,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 226,
+            "partName": "Quide Millath Corporation Higher Secondary School High School Block ,New Building, Ground Floor Northern Block East Hall, Melapalayam"
+        },
+        {
+            "partId": 229342,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 227,
+            "partName": "Quide Millath Corporation Higher Secondary School Highschool Block, New Building Northern Block, WestSide Room Melapalayam"
+        },
+        {
+            "partId": 229343,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 228,
+            "partName": "Quide Millath Corporation Higher Secondary School, Primary School Block 3rd Std Class Room West Portion, Melapalayam"
+        },
+        {
+            "partId": 229344,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 229,
+            "partName": "Quide Millath Corporation Higher Secondary School, Southern Building, (Primary Section) Melapalayam"
+        },
+        {
+            "partId": 229345,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 230,
+            "partName": "Quide Millath Corporation Higher Secondary School High School Block , Eastern Building, Eastern Portion Melapalayam"
+        },
+        {
+            "partId": 229346,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 231,
+            "partName": "Panchayat Union Primary School, ,Western Portion, Melanatham"
+        },
+        {
+            "partId": 229347,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 232,
+            "partName": "Panchayat Union Primary School, Northern Portion, Melanatham"
+        },
+        {
+            "partId": 229348,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 233,
+            "partName": "Integrated Children Development Scheme Centre No: 43 ,karuppanthurai (near Water Tank) Karrupandurai"
+        },
+        {
+            "partId": 229808,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 234,
+            "partName": "St James Primary School, South Building middle portion, Karrupandurai"
+        },
+        {
+            "partId": 229349,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 235,
+            "partName": "Panchayat Union Primary School ,Vilagam"
+        },
+        {
+            "partId": 229350,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 236,
+            "partName": "Arabic Madarasha Building ,Vava Pallivasal Compound Methamarpalayam, 3rd Street Melapalayam"
+        },
+        {
+            "partId": 229351,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 237,
+            "partName": "Integrated Children Development Scheme Centre , No 33 Corporation ward office Melapalayam"
+        },
+        {
+            "partId": 229352,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 238,
+            "partName": "Nehru Primary School, ,North Side, Baseerappa North St Melapalayam"
+        },
+        {
+            "partId": 229353,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 239,
+            "partName": "Nehru Primary School, ,South Side ,Baseerappa North St Melapalayam"
+        },
+        {
+            "partId": 229354,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 240,
+            "partName": "Quide Millath Corporation Higher Secondary School Primary School Block South Block,Eastern Portion Melapalayam"
+        },
+        {
+            "partId": 229355,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 241,
+            "partName": "The Muslim Girls Hr.Sec.School, South Building 2nd room, M L M Nagar,Melapalayam."
+        },
+        {
+            "partId": 229356,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 242,
+            "partName": "The Muslim Girls Hr.Sec.School, South Building Last room, M L M Nagar,Melapalayam."
+        },
+        {
+            "partId": 229357,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 243,
+            "partName": "The Muslim Girls Hr.Sec.School, North Building Last room, M L M Nagar,Melapalayam."
+        },
+        {
+            "partId": 229358,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 244,
+            "partName": "Corporation Azath Primary School, Western Block, 3rd Room, Melapalayam"
+        },
+        {
+            "partId": 229359,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 245,
+            "partName": "Corporation Azath Primary School, Western Block, 4th Room, Melapalayam"
+        },
+        {
+            "partId": 229360,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 246,
+            "partName": "Ganesapuram East Primary School,South Side, Melapalayam"
+        },
+        {
+            "partId": 229361,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 247,
+            "partName": "Hameem Middle School, Western Block, Easternportion , Periakothuva Pallivasal South East St, Melapalayam"
+        },
+        {
+            "partId": 229362,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 248,
+            "partName": "Hameem Middle School,South Portion, South Side, Periakothuva Pallivasal South East St, Melapalayam"
+        },
+        {
+            "partId": 229363,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 249,
+            "partName": "Ganesapuram East Primary School,North Side, Melapalayamm"
+        },
+        {
+            "partId": 229364,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 250,
+            "partName": "Hasanathuil Ulum Primaryschool,    ,Southern Portion   Ground Floor, Moolanahamedpillai Street Melapalayam"
+        },
+        {
+            "partId": 229809,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 251,
+            "partName": "Hasanathuil Ulum Primaryschool, North side, Moolanahamedpillai Street Melapalayam"
+        },
+        {
+            "partId": 229365,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 252,
+            "partName": "Melapalayam Ward Office, Main Hall ,Melapalayam"
+        },
+        {
+            "partId": 229366,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 253,
+            "partName": "Integrated Children Development Scheme, Centre No.98 ,Melapalayam Ward Office campus, Melapalayam"
+        },
+        {
+            "partId": 229367,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 254,
+            "partName": "Muslim Higher Sec. School , Southern Block, Central Portion, Western Wing ,Room No, 3, Nethaji Road,Kurichi Melapalayam"
+        },
+        {
+            "partId": 229368,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 255,
+            "partName": "Muslim Hr.sec. School   South Block Room No : 5, melapalayam"
+        },
+        {
+            "partId": 229369,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 256,
+            "partName": "Muslim Hr.sec. School ,South Block East Part Room No: 5,Nethaji Road Kurichi Melapalayam"
+        },
+        {
+            "partId": 229370,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 257,
+            "partName": "Ganesapuram West Primary School, ,New Building, Northern Wing , Ganesapuram South Street, Melapalayam"
+        },
+        {
+            "partId": 229371,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 258,
+            "partName": "Ganesapuram West Primary   School,   , New Building, Northern Wing ,South Side,  Ganesapuram South Street, Melapalayam ."
+        },
+        {
+            "partId": 229372,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 259,
+            "partName": "Ganesapuram West Primary   School,   ,   Southern Tiled Old Building,  Ganesapuram South Street, Melapalayam"
+        },
+        {
+            "partId": 229373,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 260,
+            "partName": "Ganesapuram West Primary School, , Southern Tiled Old Building, Ganesapuram South Street, Melapalayam"
+        },
+        {
+            "partId": 229374,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 261,
+            "partName": "Adi Diravidar Primary School, ,Newbuilding West Portion, East Part Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229375,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 262,
+            "partName": "Adi Diravidar Primary School, , Southern Building, East Part Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229810,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 263,
+            "partName": "Adi Diravidar Primary School, NortBuilding Middle portion Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229376,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 264,
+            "partName": "Adi Diravidar Primary School, (Old Building) ,Northbuilding, Northern Portion Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229377,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 265,
+            "partName": "Adi Diravidar Primary School, (Old Building)   ,Northern Building, South Portion   Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229378,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 266,
+            "partName": "Ganesapuram West Primary School , New Building, Southern Portion, South Part Ganesapuram South Street, Melapalayam ."
+        },
+        {
+            "partId": 229379,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 267,
+            "partName": "Ganesapuram West Primary School ,Noon Meal Centre, Ganesapuram South Street, Melapalayam"
+        },
+        {
+            "partId": 229380,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 268,
+            "partName": "Corporation Azath Primary School, ,Southern Block FirstRoom Police Station Road Melapalayam"
+        },
+        {
+            "partId": 229381,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 269,
+            "partName": "Corporation Azath Primary School, ,Western Block IIIrd Room Police Station Road Melapalayam"
+        },
+        {
+            "partId": 229382,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 270,
+            "partName": "Periya Kothuba PalliVasal Women Arabic Matharasa, Periya Kothuba Pallivasal North West Street, Melapalayam"
+        },
+        {
+            "partId": 229811,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 271,
+            "partName": "Periya Kothuba PalliVasal Women Arabic Matharasa, Periya Kothuba Pallivasal Middle portion North West Street, Melapalayam"
+        },
+        {
+            "partId": 229383,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 272,
+            "partName": "Corporation Primary School , Eastern Wing Karungulam"
+        },
+        {
+            "partId": 229384,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 273,
+            "partName": "Corporation primary school ,Southern Side Block Karungulam"
+        },
+        {
+            "partId": 229812,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 274,
+            "partName": "Corporation primary school,Southern Side West Building Karungulam"
+        },
+        {
+            "partId": 229385,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 275,
+            "partName": "Corporation primary school ,Western Side Room Side Block Karungulam"
+        },
+        {
+            "partId": 229386,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 276,
+            "partName": "South Mohideen Jamath Primary School, 4th Class room , New Building , Western Portion, South Mohideen Pallivasal Street, Melapalayam"
+        },
+        {
+            "partId": 229387,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 277,
+            "partName": "South Mohideen Jamath Primary School, 2nd and 3rdClss room, New Building , Western Portion,South Mohideen Pallivasal Street, Melapalayam"
+        },
+        {
+            "partId": 229388,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 278,
+            "partName": "South Mohideen Jamath Primary School, Eastern Portion, I Std Calss Room ,South Mohideen Pallivasal Street, Melapalayam"
+        },
+        {
+            "partId": 229389,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 279,
+            "partName": "Azmath Primary and Nursery School,North Building East Facing,  112,NabiNagar , Melapalayam"
+        },
+        {
+            "partId": 229774,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 280,
+            "partName": "Azmath Primary and Nursery School,North Building West Facing,  112,NabiNagar , Melapalayam"
+        },
+        {
+            "partId": 229775,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 281,
+            "partName": "Adi Dravidar Primary School, South New Building, North Portion South Street, Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229776,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 282,
+            "partName": "Adi Dravidar Primary School, Old Building South west Part( Headmistress) Room, Ambikapuram Melapalayam"
+        },
+        {
+            "partId": 229777,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 283,
+            "partName": "Adi Dravidar Primary School, South New Building, South Portion Ambikapuram South Street Melapalayam"
+        },
+        {
+            "partId": 229778,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 284,
+            "partName": "Corporation Primary School ,New Building Southern Block west side room Westpart, Hameempuram Melapalayam"
+        },
+        {
+            "partId": 229813,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 285,
+            "partName": "Corporation Primary School , North Building, Middle portion, Hameempuram Melapalayam"
+        },
+        {
+            "partId": 229779,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 286,
+            "partName": "Corporation Primary School New Building ,South Portion, Western Part Room (west Part)Hameempuram Melapalayam"
+        },
+        {
+            "partId": 229780,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 287,
+            "partName": "Corporation Primary School, ,New Building Southern Block East Side. Hameempuram Melapalayam"
+        },
+        {
+            "partId": 229781,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 288,
+            "partName": "Integrated Children Development Centre No. 105,Corporation Primary School campus, Hameempuram, Melapalayam"
+        },
+        {
+            "partId": 229782,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 289,
+            "partName": "Integrated Children Development Centre No. 105, 2nd Entrance, Corporation Primary School campus, Hameempuram, Melapalayam"
+        },
+        {
+            "partId": 229783,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 290,
+            "partName": "Rahumania Higher Secondary School Middle Block 9th A Section Melapalayam"
+        },
+        {
+            "partId": 229784,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 291,
+            "partName": "Rahumania Higher Secondary School Middle Block 9th B Section Melapalayam"
+        },
+        {
+            "partId": 229814,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 292,
+            "partName": "Rahumania Higher Secondary School Eastern side middle block middle portion, Melapalayam"
+        },
+        {
+            "partId": 229785,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 293,
+            "partName": "Rahumania Higher Secondary School Middle Block 9th C Section Melapalayam"
+        },
+        {
+            "partId": 229786,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 294,
+            "partName": "Rahumania Higher Secondary School Middle Block 9th D Section Melapalayam"
+        },
+        {
+            "partId": 229787,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 295,
+            "partName": "Rahumania Higher Secondary School South Portion 9th Std Class Room Melapalayam"
+        },
+        {
+            "partId": 229788,
+            "stateCd": "S22",
+            "districtCd": "S2229",
+            "acNumber": 226,
+            "partNumber": 296,
+            "partName": "Panchayath Union Primary School New Building West Facing Rajagopalapuram"
+        }
+    ],
+    "file": null
+}

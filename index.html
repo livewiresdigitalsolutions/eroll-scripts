@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Electoral Roll Extractor — Batch Queue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #0d1117;
+    --surface:   #161b22;
+    --border:    #30363d;
+    --accent:    #f0a500;
+    --accent2:   #e07b00;
+    --text:      #e6edf3;
+    --muted:     #7d8590;
+    --success:   #3fb950;
+    --error:     #f85149;
+    --warning:   #d29922;
+    --queued:    #58a6ff;
+    --running-a: #f0a500;
+    --running-b: #ff6b35;
+  }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 32px 24px 64px;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+  }
+  .header-emblem {
+    width: 48px; height: 48px;
+    background: var(--accent);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600; font-size: 18px; color: #000;
+    flex-shrink: 0;
+  }
+  .header-text h1 {
+    font-size: 22px; font-weight: 600; letter-spacing: -0.3px;
+    line-height: 1.1;
+  }
+  .header-text p {
+    font-size: 13px; color: var(--muted); margin-top: 3px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .header-badge {
+    margin-left: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 4px 10px; border-radius: 4px;
+  }
+
+  /* ── Layout ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+  /* ── Drop zone ── */
+  .dropzone {
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    padding: 48px 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+    position: relative;
+    background: var(--surface);
+  }
+  .dropzone:hover, .dropzone.drag-over {
+    border-color: var(--accent);
+    background: rgba(240,165,0,.05);
+  }
+  .dropzone input[type=file] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%;
+  }
+  .dropzone-icon {
+    font-size: 36px; margin-bottom: 12px; display: block;
+    filter: drop-shadow(0 0 12px rgba(240,165,0,.4));
+  }
+  .dropzone h2 { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+  .dropzone p  { font-size: 13px; color: var(--muted); }
+  .dropzone .limit-pill {
+    display: inline-block; margin-top: 14px;
+    background: rgba(240,165,0,.12); border: 1px solid rgba(240,165,0,.3);
+    color: var(--accent); font-size: 11px; padding: 3px 10px;
+    border-radius: 20px; font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* ── Options bar ── */
+  .options-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex; flex-wrap: wrap; gap: 16px;
+    align-items: flex-end;
+    margin-top: 16px;
+  }
+  .field { display: flex; flex-direction: column; gap: 5px; }
+  .field label {
+    font-size: 11px; font-family: 'IBM Plex Mono', monospace;
+    color: var(--muted); letter-spacing: .5px; text-transform: uppercase;
+  }
+  .field input, .field select {
+    background: var(--bg); border: 1px solid var(--border);
+    color: var(--text); font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px; padding: 6px 10px; border-radius: 6px;
+    width: 110px; outline: none;
+    transition: border-color .15s;
+  }
+  .field input:focus, .field select:focus { border-color: var(--accent); }
+  .field.wide input { width: 200px; }
+
+  /* ── Buttons ── */
+  .btn {
+    padding: 8px 20px; border-radius: 6px; border: none;
+    font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: opacity .15s, transform .1s;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn-primary {
+    background: var(--accent); color: #000;
+  }
+  .btn-primary:hover { background: var(--accent2); }
+  .btn-primary:disabled { opacity: .4; cursor: not-allowed; }
+  .btn-ghost {
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border);
+  }
+  .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+
+  .actions { display: flex; gap: 10px; margin-top: 16px; align-items: center; }
+  #counter {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted);
+    margin-left: auto;
+  }
+
+  /* ── Queue table ── */
+  .queue-wrap {
+    margin-top: 24px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .queue-header {
+    background: var(--surface);
+    padding: 10px 16px;
+    font-size: 11px; font-family: 'IBM Plex Mono', monospace;
+    color: var(--muted); text-transform: uppercase; letter-spacing: .5px;
+    display: grid;
+    grid-template-columns: 24px 1fr 80px 80px 80px 100px 50px;
+    gap: 8px; align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+  #queue-list { list-style: none; }
+  .queue-item {
+    display: grid;
+    grid-template-columns: 24px 1fr 80px 80px 80px 100px 50px;
+    gap: 8px; align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    transition: background .15s;
+    animation: slideIn .2s ease;
+  }
+  .queue-item:last-child { border-bottom: none; }
+  .queue-item:hover { background: rgba(255,255,255,.02); }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .q-idx { font-family: 'IBM Plex Mono', monospace; color: var(--muted); font-size: 11px; }
+  .q-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-name span { font-size: 11px; color: var(--muted); display: block; font-family: 'IBM Plex Mono', monospace; }
+  .q-cell { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
+
+  /* Status pill */
+  .status-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 11px; font-family: 'IBM Plex Mono', monospace;
+    padding: 3px 8px; border-radius: 20px; white-space: nowrap;
+  }
+  .status-pill .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+  }
+  .status-queued   { background: rgba(88,166,255,.1);  color: var(--queued);  }
+  .status-queued   .dot { background: var(--queued); }
+  .status-running  { background: rgba(240,165,0,.12); color: var(--accent);  }
+  .status-running  .dot { background: var(--accent); animation: pulse 1s infinite; }
+  .status-done     { background: rgba(63,185,80,.1);  color: var(--success); }
+  .status-done     .dot { background: var(--success); }
+  .status-error    { background: rgba(248,81,73,.1);  color: var(--error);   }
+  .status-error    .dot { background: var(--error); }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+  .q-remove { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 16px; padding: 2px 6px; border-radius: 4px; }
+  .q-remove:hover { color: var(--error); background: rgba(248,81,73,.1); }
+
+  /* ── Log panel ── */
+  .log-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    max-height: 640px;
+  }
+  .log-panel-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .log-panel-header h3 {
+    font-size: 13px; font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .log-body {
+    flex: 1; overflow-y: auto; padding: 12px 16px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    line-height: 1.7; color: var(--muted);
+  }
+  .log-body::-webkit-scrollbar { width: 4px; }
+  .log-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  .log-entry { margin-bottom: 2px; display: flex; gap: 10px; }
+  .log-entry .ts { color: #3d444d; flex-shrink: 0; }
+  .log-entry.info  .msg { color: var(--muted); }
+  .log-entry.ok    .msg { color: var(--success); }
+  .log-entry.warn  .msg { color: var(--warning); }
+  .log-entry.err   .msg { color: var(--error); }
+  .log-entry.head  .msg { color: var(--accent); font-weight: 500; }
+
+  /* ── Summary cards ── */
+  .summary-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 10px; padding: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .summary-card {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .summary-card .val {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px; font-weight: 600; color: var(--text);
+  }
+  .summary-card .lbl {
+    font-size: 11px; color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: .4px;
+  }
+
+  /* ── Progress bar ── */
+  .progress-bar-wrap {
+    height: 3px; background: var(--border); border-radius: 2px;
+    overflow: hidden; margin-top: 12px;
+  }
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--running-a), var(--running-b));
+    border-radius: 2px;
+    transition: width .4s ease;
+    width: 0%;
+  }
+
+  /* ── Command hint ── */
+  .cmd-hint {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 14px;
+    margin-top: 16px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+    color: var(--muted); line-height: 1.6;
+  }
+  .cmd-hint .cmd-title {
+    font-size: 10px; text-transform: uppercase; letter-spacing: .5px;
+    color: var(--accent); margin-bottom: 6px;
+  }
+  .cmd-hint code { color: var(--text); }
+
+  .empty-state {
+    text-align: center; padding: 40px 16px;
+    color: var(--muted); font-size: 13px;
+  }
+  .empty-state .icon { font-size: 28px; display: block; margin-bottom: 8px; opacity: .4; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-emblem">ER</div>
+  <div class="header-text">
+    <h1>Electoral Roll Extractor</h1>
+    <p>Tamil Nadu · OCR Batch Processor</p>
+  </div>
+  <div class="header-badge">electoral_roll.py</div>
+</div>
+
+<div class="layout">
+  <!-- Left: drop + queue -->
+  <div>
+    <!-- Drop zone -->
+    <div class="dropzone" id="dropzone">
+      <input type="file" id="fileInput" accept=".pdf" multiple />
+      <span class="dropzone-icon">📂</span>
+      <h2>Drop PDF files here</h2>
+      <p>or click to browse — supports up to 10 PDFs per batch</p>
+      <span class="limit-pill">MAX 10 FILES · PDF ONLY</span>
+    </div>
+
+    <!-- Options -->
+    <div class="options-bar">
+      <div class="field">
+        <label>Start Page</label>
+        <input type="number" id="startPage" value="3" min="1" />
+      </div>
+      <div class="field">
+        <label>End Page</label>
+        <input type="number" id="endPage" placeholder="auto" min="1" />
+      </div>
+      <div class="field">
+        <label>DPI</label>
+        <select id="dpiSel">
+          <option value="150">150 — Fast</option>
+          <option value="200" selected>200 — Default</option>
+          <option value="250">250 — Better</option>
+          <option value="300">300 — High</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Output Folder</label>
+        <input type="text" id="outputDir" placeholder="same as PDF" class="wide" style="width:180px"/>
+      </div>
+      <div class="field">
+        <label>Retry</label>
+        <select id="retrySel">
+          <option value="">Enabled (auto)</option>
+          <option value="--no-retry">Disabled</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="btn btn-primary" id="runBtn" disabled>▶ Run Queue</button>
+      <button class="btn btn-ghost" id="clearBtn">✕ Clear All</button>
+      <span id="counter">0 files queued</span>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Queue table -->
+    <div class="queue-wrap" style="margin-top:16px">
+      <div class="queue-header">
+        <span>#</span>
+        <span>Filename</span>
+        <span>Size</span>
+        <span>Pages</span>
+        <span>Records</span>
+        <span>Status</span>
+        <span></span>
+      </div>
+      <ul id="queue-list">
+        <li class="empty-state">
+          <span class="icon">📄</span>
+          Add PDF files above to build the batch queue
+        </li>
+      </ul>
+    </div>
+
+    <!-- Command hint -->
+    <div class="cmd-hint">
+      <div class="cmd-title">Equivalent CLI Command (per file)</div>
+      <code id="cmdPreview">python electoral_roll.py &lt;pdf&gt; --start-page 3 --dpi 200 --batch</code>
+    </div>
+  </div>
+
+  <!-- Right: log panel -->
+  <div>
+    <div class="log-panel">
+      <div class="log-panel-header">
+        <h3>📋 Run Log</h3>
+        <button class="btn btn-ghost" style="padding:4px 12px;font-size:12px" onclick="clearLog()">Clear</button>
+      </div>
+      <div class="log-body" id="logBody">
+        <div class="log-entry info"><span class="ts">--:--:--</span><span class="msg">Waiting for batch to start…</span></div>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="val" id="s-total">0</div>
+          <div class="lbl">Files Total</div>
+        </div>
+        <div class="summary-card">
+          <div class="val" id="s-done">0</div>
+          <div class="lbl">Completed</div>
+        </div>
+        <div class="summary-card">
+          <div class="val" id="s-records">0</div>
+          <div class="lbl">Records Found</div>
+        </div>
+        <div class="summary-card">
+          <div class="val" id="s-errors">0</div>
+          <div class="lbl">Errors</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────────
+const MAX_FILES = 10;
+let queue = [];          // { id, file, name, size, status, records, pages, cmd }
+let isRunning = false;
+let stats = { total:0, done:0, records:0, errors:0 };
+
+// ── DOM refs ──────────────────────────────────────────────────────────────────
+const dropzone    = document.getElementById('dropzone');
+const fileInput   = document.getElementById('fileInput');
+const queueList   = document.getElementById('queue-list');
+const runBtn      = document.getElementById('runBtn');
+const clearBtn    = document.getElementById('clearBtn');
+const counter     = document.getElementById('counter');
+const logBody     = document.getElementById('logBody');
+const progressBar = document.getElementById('progressBar');
+const cmdPreview  = document.getElementById('cmdPreview');
+
+// ── File input ────────────────────────────────────────────────────────────────
+fileInput.addEventListener('change', e => addFiles([...e.target.files]));
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag-over'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag-over'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault(); dropzone.classList.remove('drag-over');
+  addFiles([...e.dataTransfer.files].filter(f => f.type === 'application/pdf'));
+});
+
+// Live command preview
+['startPage','endPage','dpiSel','retrySel','outputDir'].forEach(id =>
+  document.getElementById(id).addEventListener('change', updateCmdPreview)
+);
+function updateCmdPreview() {
+  const sp = document.getElementById('startPage').value;
+  const ep = document.getElementById('endPage').value;
+  const dpi = document.getElementById('dpiSel').value;
+  const retry = document.getElementById('retrySel').value;
+  const outDir = document.getElementById('outputDir').value;
+  let cmd = `python electoral_roll.py <pdf> --start-page ${sp} --dpi ${dpi} --batch`;
+  if (ep) cmd += ` --end-page ${ep}`;
+  if (retry) cmd += ` ${retry}`;
+  if (outDir) cmd += ` --output "${outDir}/<name>.xlsx"`;
+  cmdPreview.textContent = cmd;
+}
+
+function addFiles(files) {
+  const remaining = MAX_FILES - queue.length;
+  if (remaining <= 0) { log('warn', `Queue is full (max ${MAX_FILES} files)`); return; }
+  const toAdd = files.slice(0, remaining);
+  const skipped = files.length - toAdd.length;
+  toAdd.forEach(f => {
+    if (!f.name.toLowerCase().endsWith('.pdf')) { log('warn', `Skipped non-PDF: ${f.name}`); return; }
+    if (queue.find(q => q.name === f.name)) { log('warn', `Duplicate skipped: ${f.name}`); return; }
+    const item = {
+      id: Date.now() + Math.random(),
+      file: f,
+      name: f.name,
+      size: f.size,
+      status: 'queued',
+      records: null,
+      pages: null,
+    };
+    queue.push(item);
+    log('info', `Added: ${f.name} (${formatSize(f.size)})`);
+  });
+  if (skipped > 0) log('warn', `${skipped} file(s) skipped — queue limit reached`);
+  renderQueue();
+  updateCounter();
+  fileInput.value = '';
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function renderQueue() {
+  if (queue.length === 0) {
+    queueList.innerHTML = `<li class="empty-state"><span class="icon">📄</span>Add PDF files above to build the batch queue</li>`;
+    runBtn.disabled = true;
+    return;
+  }
+  runBtn.disabled = isRunning;
+  queueList.innerHTML = queue.map((item, i) => `
+    <li class="queue-item" id="qi-${item.id}">
+      <span class="q-idx">${i + 1}</span>
+      <span class="q-name">${esc(item.name)}<span>${formatSize(item.size)}</span></span>
+      <span class="q-cell">${item.pages !== null ? item.pages : '—'}</span>
+      <span class="q-cell" id="rec-${item.id}">${item.records !== null ? item.records : '—'}</span>
+      <span class="q-cell">—</span>
+      <span>${statusPill(item.status)}</span>
+      <button class="q-remove" onclick="removeItem('${item.id}')" title="Remove" ${item.status==='running'?'disabled':''}>✕</button>
+    </li>
+  `).join('');
+}
+
+function statusPill(s) {
+  const map = {
+    queued:  ['queued',  '⬤', 'Queued'],
+    running: ['running', '⬤', 'Running'],
+    done:    ['done',    '⬤', 'Done'],
+    error:   ['error',   '⬤', 'Error'],
+  };
+  const [cls, dot, label] = map[s] || map.queued;
+  return `<span class="status-pill status-${cls}"><span class="dot"></span>${label}</span>`;
+}
+
+function updateStatus(id, status, records) {
+  const item = queue.find(q => q.id === id);
+  if (!item) return;
+  item.status = status;
+  if (records !== undefined) item.records = records;
+  const el = document.getElementById(`qi-${id}`);
+  if (!el) return;
+  const cells = el.querySelectorAll('span');
+  cells[5].innerHTML = statusPill(status);
+  if (records !== undefined) {
+    document.getElementById(`rec-${id}`).textContent = records;
+  }
+}
+
+function updateCounter() {
+  counter.textContent = `${queue.length} file${queue.length !== 1 ? 's' : ''} queued`;
+  stats.total = queue.length;
+  document.getElementById('s-total').textContent = stats.total;
+}
+
+function removeItem(id) {
+  if (isRunning) return;
+  queue = queue.filter(q => q.id !== id);
+  renderQueue();
+  updateCounter();
+}
+
+clearBtn.addEventListener('click', () => {
+  if (isRunning) return;
+  queue = [];
+  renderQueue();
+  updateCounter();
+  log('info', 'Queue cleared');
+});
+
+// ── Run logic ─────────────────────────────────────────────────────────────────
+// NOTE: This UI generates the exact shell commands to run.
+// In a production setup, connect to a local Python server (e.g. Flask/FastAPI)
+// that actually executes the script. Here we simulate the run for UI preview.
+runBtn.addEventListener('click', runQueue);
+
+async function runQueue() {
+  if (isRunning || queue.length === 0) return;
+  isRunning = true;
+  runBtn.disabled = true;
+  stats = { total: queue.length, done: 0, records: 0, errors: 0 };
+  updateSummary();
+
+  const sp     = document.getElementById('startPage').value;
+  const ep     = document.getElementById('endPage').value;
+  const dpi    = document.getElementById('dpiSel').value;
+  const retry  = document.getElementById('retrySel').value;
+  const outDir = document.getElementById('outputDir').value.trim();
+
+  log('head', `━━━ Batch started — ${queue.length} file(s) ━━━`);
+
+  for (let i = 0; i < queue.length; i++) {
+    const item = queue[i];
+    if (item.status === 'done') continue;
+
+    updateStatus(item.id, 'running');
+    const pct = Math.round((i / queue.length) * 100);
+    progressBar.style.width = pct + '%';
+
+    log('info', `[${i+1}/${queue.length}] Processing: ${item.name}`);
+
+    // Build the command this item would run
+    const stem  = item.name.replace(/\.pdf$/i, '');
+    const outXlsx = outDir ? `"${outDir}/${stem}.xlsx"` : `(same folder as PDF)`;
+    let cmd = `python electoral_roll.py "${item.name}" --start-page ${sp} --dpi ${dpi} --batch`;
+    if (ep) cmd += ` --end-page ${ep}`;
+    if (retry) cmd += ` ${retry}`;
+    if (outDir) cmd += ` --output "${outDir}/${stem}.xlsx"`;
+    log('info', `  $ ${cmd}`);
+    log('info', `  Output XLSX: ${outXlsx}`);
+    log('info', `  Sheet name will be: "${stem.slice(0,31)}"`);
+
+    // ── Simulate async processing (replace this block with real fetch to backend) ──
+    await simulateProcessing(item, i);
+    // ─────────────────────────────────────────────────────────────────────────────
+
+    if (item.status === 'done') {
+      stats.done++;
+      stats.records += item.records || 0;
+      log('ok', `  ✅ Done — ${item.records} records extracted → ${stem}.xlsx`);
+    } else {
+      stats.errors++;
+      log('err', `  ❌ Error processing ${item.name}`);
+    }
+    updateSummary();
+  }
+
+  progressBar.style.width = '100%';
+  log('head', `━━━ Batch complete — ${stats.done}/${stats.total} succeeded, ${stats.records} total records ━━━`);
+  isRunning = false;
+  runBtn.disabled = false;
+  renderQueue();
+}
+
+// ── Simulation (replace with real backend call) ──────────────────────────────
+// To connect to a real backend, replace simulateProcessing with:
+//   const res = await fetch('http://localhost:5000/process', { method:'POST', body: formData });
+//   const data = await res.json();
+//   item.records = data.records; item.status = data.ok ? 'done' : 'error';
+async function simulateProcessing(item, idx) {
+  const delay = 1200 + Math.random() * 800;
+  await sleep(delay);
+  const success = Math.random() > 0.08; // 92% success rate simulation
+  if (success) {
+    item.records = Math.floor(300 + Math.random() * 900);
+    item.status  = 'done';
+  } else {
+    item.status  = 'error';
+    item.records = 0;
+  }
+  updateStatus(item.id, item.status, item.records);
+}
+
+// ── Log helpers ───────────────────────────────────────────────────────────────
+function log(level, msg) {
+  const ts  = new Date().toTimeString().slice(0, 8);
+  const div = document.createElement('div');
+  div.className = `log-entry ${level}`;
+  div.innerHTML = `<span class="ts">${ts}</span><span class="msg">${esc(msg)}</span>`;
+  logBody.appendChild(div);
+  logBody.scrollTop = logBody.scrollHeight;
+}
+function clearLog() {
+  logBody.innerHTML = '';
+}
+function updateSummary() {
+  document.getElementById('s-total').textContent   = stats.total;
+  document.getElementById('s-done').textContent    = stats.done;
+  document.getElementById('s-records').textContent = stats.records;
+  document.getElementById('s-errors').textContent  = stats.errors;
+}
+
+// ── Utils ─────────────────────────────────────────────────────────────────────
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function formatSize(b) {
+  if (b < 1024) return b + ' B';
+  if (b < 1048576) return (b/1024).toFixed(1) + ' KB';
+  return (b/1048576).toFixed(1) + ' MB';
+}
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+</script>
+</body>
+</html>
